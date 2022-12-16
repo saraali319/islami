@@ -6,8 +6,18 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
+    return Stack(
+      children:[
+        Image.asset('assests/images/background.png',width: double.infinity,fit:BoxFit.fitWidth),
+        Scaffold(
+          //if i want to change this screen background only
+          //backgroundColor: Colors.transparent,
+        appBar: AppBar(
+          title: Text("Islami"),
+          centerTitle: true,
+
+        ),
+      ),]
     );
   }
 }
