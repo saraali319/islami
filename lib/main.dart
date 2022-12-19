@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:islami/home/sura_details.dart';
 import 'package:islami/my_theme_data.dart';
 
 import 'home/homescrren.dart';
@@ -9,6 +10,7 @@ void main(){
     initialRoute:HomeScreen.routeName,
     routes: {
       HomeScreen.routeName:(c)=>HomeScreen(),
+      SuraDetails.routeName:(c)=>SuraDetails(),
     },
     debugShowCheckedModeBanner: false,
     /* first we make theme data but we notice that we will use it more than

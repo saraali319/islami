@@ -9,13 +9,19 @@ class MyThemeData{
     appBarTheme: AppBarTheme(
 elevation: 0,
       backgroundColor: Colors.transparent,
+      iconTheme: IconThemeData(
+        color: colorBlack
+      )
     ),
       textTheme: TextTheme(headline1: TextStyle(
           fontSize: 25,
         color: colorBlack,
         fontWeight: FontWeight.bold,
 
-      )),
+      ),
+      subtitle1:  TextStyle(fontSize: 25,
+        color: gold,
+     )),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       backgroundColor: gold,
       selectedItemColor:colorBlack,

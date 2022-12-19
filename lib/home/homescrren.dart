@@ -30,6 +30,9 @@ class _HomeScreenState extends State<HomeScreen> {
           centerTitle: true,
         ),
           bottomNavigationBar: BottomNavigationBar(
+            // عشان لما اضغط عليها الصورة تطلع لفوق والكلمة تكتب
+            // fixed all appear
+            type: BottomNavigationBarType.shifting,
             onTap:(index){
               currentIndex=index;
               setState(() {
@@ -40,10 +43,10 @@ class _HomeScreenState extends State<HomeScreen> {
             // but this way doesn't work
             //backgroundColor: MyThemeData.gold,
             items: [
-              BottomNavigationBarItem(icon: ImageIcon(AssetImage('assests/images/quran.png')),label: "",backgroundColor: MyThemeData.gold),
-              BottomNavigationBarItem(icon: ImageIcon(AssetImage('assests/images/radio.png')),label: "",backgroundColor: MyThemeData.gold),
-              BottomNavigationBarItem(icon: ImageIcon(AssetImage('assests/images/sebha.png')),label:"",backgroundColor: MyThemeData.gold),
-              BottomNavigationBarItem(icon: ImageIcon(AssetImage('assests/images/ahadeth.png')),label: "",backgroundColor: MyThemeData.gold),
+              BottomNavigationBarItem(icon: ImageIcon(AssetImage('assests/images/quran.png')),label: "quran",backgroundColor: MyThemeData.gold),
+              BottomNavigationBarItem(icon: ImageIcon(AssetImage('assests/images/radio.png')),label: "radio",backgroundColor: MyThemeData.gold),
+              BottomNavigationBarItem(icon: ImageIcon(AssetImage('assests/images/sebha.png')),label:"sebha",backgroundColor: MyThemeData.gold),
+              BottomNavigationBarItem(icon: ImageIcon(AssetImage('assests/images/ahadeth.png')),label: "ahadeth",backgroundColor: MyThemeData.gold),
 
             ],
           ),
